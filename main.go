@@ -23,11 +23,11 @@ func (t *Triangle) isEquilatero() bool {
 	return (t.a == t.b) && (t.b == t.c)
 }
 
-func (t Triangle) isIsosceles() bool {
+func (t *Triangle) isIsosceles() bool {
 	return (t.a == t.b) && (t.c != t.a) || (t.a == t.c) && (t.b != t.a) || (t.b == t.c) && (t.a != t.c)
 }
 
-func (t Triangle) isEscaleno() bool {
+func (t *Triangle) isEscaleno() bool {
 	return (t.a != t.b) && (t.a != t.c) && (t.b != t.c)
 }
 
